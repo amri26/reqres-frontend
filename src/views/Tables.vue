@@ -4,6 +4,12 @@
       <div class="col-12">
         <div class="card">
           <div class="card-header pb-0">
+            <div class="d-flex align-items-center">
+              <p class="mb-0">Edit Profile</p>
+              <argon-button color="success" size="sm" class="ms-auto" ><a href="/adduser" class="text-white">Create</a></argon-button>
+            </div>
+          </div>
+          <div class="card-header pb-0">
             <h6>Authors table</h6>
           </div>
           <div class="card-body px-0 pt-0 pb-2">
@@ -53,6 +59,8 @@
 </template>
 
 <script>
+import ArgonInput from "@/components/ArgonInput.vue";
+import ArgonButton from "@/components/ArgonButton.vue";
 import axios from 'axios';
 
 export default {
@@ -74,7 +82,7 @@ export default {
       this.errors.push(e);
     }
   },
-  
+
   methods: {
     remove() {
       axios.delete(`https://reqres.in/api/users/2`)
@@ -86,6 +94,8 @@ export default {
           this.errors.push(e);
         });
     }
-  }
+  },
+
+  components: { ArgonInput, ArgonButton },
 };
 </script>

@@ -17,8 +17,17 @@
           </template>
         </sidenav-item>
       </li>
-      
-      
+      <li class="nav-item">
+        <sidenav-item
+          url="/adduser"
+          :class="getRoute() === 'adduser' ? 'active' : ''"
+          :navText="this.$store.state.isRTL ? 'حساب تعريفي' : 'Create'"
+        >
+          <template v-slot:icon>
+            <i class="ni ni-collection text-dark text-sm opacity-10"></i>
+          </template>
+        </sidenav-item>
+      </li>
       <li class="nav-item">
         <sidenav-item
           url="/profile"
