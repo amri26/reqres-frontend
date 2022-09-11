@@ -5,7 +5,7 @@
         <div class="card">
           <div class="card-header pb-0">
             <div class="d-flex align-items-center">
-              <p class="mb-0">Edit Profile</p>
+              <p class="mb-0">Profiles</p>
               <argon-button color="success" size="sm" class="ms-auto" ><a href="/adduser" class="text-white">Create</a></argon-button>
             </div>
           </div>
