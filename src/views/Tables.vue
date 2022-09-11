@@ -6,7 +6,7 @@
           <div class="card-header pb-0">
             <div class="d-flex align-items-center">
               <p class="mb-0">Profiles</p>
-              <argon-button color="success" size="sm" class="ms-auto" ><a href="/adduser" class="text-white">Create</a></argon-button>
+              <argon-button color="success" size="sm" class="ms-auto" ><a href="adduser" class="text-white">Create</a></argon-button>
             </div>
           </div>
           <div class="card-header pb-0">
@@ -42,7 +42,7 @@
                         <a class="btn btn-link text-danger text-gradient px-3 mb-0" @click="remove">
                           <i class="far fa-trash-alt me-2" aria-hidden="true"></i>Delete
                         </a>
-                        <a class="btn btn-link text-dark px-3 mb-0" href="Profile">
+                        <a class="btn btn-link text-dark px-3 mb-0" href="profile">
                           <i class="fas fa-pencil-alt text-dark me-2" aria-hidden="true"></i>Edit
                         </a>
                       </div>
