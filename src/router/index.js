@@ -12,7 +12,7 @@ const routes = [
   {
     path: "/",
     name: "/",
-    redirect: "/dashboard-default",
+    redirect: "/tables",
   },
   {
     path: "/dashboard-default",
@@ -53,8 +53,7 @@ const routes = [
     path: "/signup",
     name: "Signup",
     component: Signup,
-  },
-  
+  }
 ];
 
 const router = createRouter({
